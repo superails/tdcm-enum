@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.select :status, Post::STATUSES %>
+    <%= form.select :status, Post.statuses.keys %>
   </div>
 
   <div class="field">
