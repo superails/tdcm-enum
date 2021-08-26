@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :status %>
+    <%= form.select :status, Post::STATUSES %>
+  </div>
+
+  <div class="field">
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
